@@ -1,0 +1,19 @@
+ 
+  .card-container {
+    height: 500px;
+    display: flex; /* Ensures flex layout */
+    justify-content: center; /* Center card horizontally */
+    align-items: center; /* Center card vertically */
+    overflow: hidden; /* Optional: to hide any overflow */
+}
+
+.card {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+}
+
+.card-img-top {
+    width: 100%; /* Full width of the card */
+    height: 50%; /* Half height of the card */
+    object-fit: cover; /* Ensures image covers the area without stretching */
+}

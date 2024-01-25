@@ -1,0 +1,38 @@
+.container {
+  background-color: black;
+  color: white;
+}
+
+.grid-container {
+  width: 66.66%; /* 2/3 of the viewport */
+}
+
+.grid-container .row {
+  margin: 0; /* Removes default row margin */
+  
+}
+
+.grid-container .row .col {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 0px; /* Adjust padding as needed */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  min-height: 500px; 
+  min-width: 500px; 
+  position: relative; 
+}
+
+.project-name {
+  margin: 4%; 
+  width: 90%;
+}
+
+ 
+/* Custom CSS */
+@media (max-width: 991px) { /* Adjust the max-width value based on your requirements */
+  .grid-container .row .col:not(:first-child) {
+    margin-top: 15%; /* Apply a top margin of 10% */
+  }
+}

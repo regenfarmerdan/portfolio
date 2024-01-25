@@ -1,0 +1,68 @@
+/* PopupCard.css */
+
+/* The overlay that covers the entire viewport */
+.popup-container {
+    position: relative; /* Fixed position */
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px); /* Blur effect for the background */
+    z-index: 1000; /* Ensure it's above other elements */
+    transition: all 0.3s ease-in-out; /* Smooth transition for opening/closing */
+}
+
+ 
+.popup-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 400px;
+    /* width: 80%;   */
+    transition: transform 0.3s ease-in-out;  
+    transform: scale(1);  
+ }
+
+/* When closing the popup, you might want to animate it */
+.popup-container-closing {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.popup-card-closing {
+    transform: scale(0.9); /* Scale down the card when closing */
+}
+
+.arrow {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: goldenrod; /* Making the arrows golden */
+}
+
+
+.left-arrow {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.right-arrow {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.button-container {
+  display: flex;
+  
+}
