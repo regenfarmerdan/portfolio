@@ -1,0 +1,40 @@
+
+.navbar {
+  position: sticky;
+  top: 20px;
+  display: flex;
+  height: 100px;
+  width: 100%;
+  justify-content: end ;
+  z-index: 1000000;
+}
+
+.navbar .nav {
+  cursor: pointer;
+  width:  200px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  margin-right: 4%; 
+  border-radius: 5%;
+}
+
+.navbar h4, h5 {
+  cursor: pointer;
+  display: flex;
+  font-weight: 300;
+  margin-right: 24%; 
+  color: whitesmoke;
+}
+
+.navbar .showInfo {
+  width:  350px;
+  border-bottom: 1px solid gold;
+  border-left: 1px solid gold;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  /* margin-right: 4%;  */
+   
+}

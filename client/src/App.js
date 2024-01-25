@@ -4,6 +4,7 @@ import './App.css';
 import GridContainer from './Components/Grid';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { fetchProjects } from './services/projectService';
+import MyNavbar from './Components/NavBar';
 
 function App() {
 
@@ -27,8 +28,14 @@ if (!projectData || projectData.length === 0) {
   return <div>Loading...</div>; // Or return null;
 }
   return (
+
+    <div>
+      <MyNavbar />
+      
+      <GridContainer />
+    </div>
        
-    <GridContainer />
+   
        
   );
 }

@@ -21,95 +21,95 @@ const booksyCrawlerProject = {
         
     {
         "id": 1,
-        "image": "/googlemaps.jpeg",
+        "image": "/Social-Proof.png",
         "header": "Project Overview",
         "title": "",
-        "text": "The client is a Master Hairstylist with over 100 five star reviews on Booksy. Wouldn't it be nice if she had control of those reviews so that she can use them in her social media, website, and search engine marketing? I built a crawler to pull the booksy reviews to store them on her database and website."
+        "text": "The client is a Master Hairstylist with over 100 five star reviews on Booksy! We wanted export and give her full controll of  this data which can be used to garner social proof."
     },
     {
         "id": 2,
-        "image": "/security.png",
+        "image": "/reviews.png",
         "header": "The Crawler",
         "title": "",
-        "text": "Sent to the Booksy url where it parsed through site element pulling the review, counting the number of stars for each review. "
-    },
+        "text": " I built and sent a crawler to her Booksy url, where it parsed through the site elements pulling her reviews and 'reading' start ratings. "   },
     {
         "id": 3,
-        "image": "/messaging.png",
+        "image": "/blonde.jpeg",
         "header": "Storage",
         "title": "",
-        "text": "The crawler stored the review data in a mongodb databse"
+        "text": " The application copied the data and stored it on a database."
     },
     {
         "id": 4,
-        "image": "/googlemaps.jpeg",  
+        "image": "/orangehairbooksy.jpeg",  
         "header": "Rendering the data on clients webpage",
         "title": "",
-        "text": "The database sends the data to client's webpage"  
+        "text": "The database sends the data back to the application to render our own star icons, fonts, and styles."  
     },
     {
         "id": 5,
-        "image": "/database.png",
+        "image": "/pinkhair.jpeg",
         "header": "Content Planning",
         "title": "", 
-        "text": "With complete access to her hard-earned reviews, client is informed various avenues to leverage the reviews in her marketing."
+        "text": "From here, this data can be sent to her personal website or social media. With complete access to her hard-earned reviews, the client is prepared to leverage her great work and grow her business faster."
     },
     {
         "id": 6,
-        "image": "/summarry.png",
+        "image": "/ashleyyvettegoogle.png",
         "header": "The Future",
         "title": "",
-        "text": "Future versions of this application could employ direct integration with social media, Google Business Reviews, or CRM tools."
+        "text": "Future versions of this application could employ direct API integration and automation with social media, Google Business Reviews, or CRM tools."
     }
 
     ]
 }; 
 
 const myPortfolioProject = {
-    projectName: 'Portfolio App', 
+    projectName: 'Portfolio Build', 
     cards: [ 
         
     {
         "id": 1,
-        "image": "/googlemaps.jpeg",
+        "image": "/portfolio_snapshot.png",
         "header": "Project Scope",
         "title": "",
-        "text": "Showcase technical abilities in a visually appealing manner "
+        "text": "This app pulls together several of the technical profficiencies and serves to highlight other projects that I've worked on "
     },
     {
         "id": 2,
-        "image": "/security.png",
+        "image": "/mern.jpeg",
         "header": "The Design",
         "title": "",
-        "text": "The concept was to represents the different skills and sides of an a full-stack application."
+        "text": " A cube seemed appropriate to showcase the mulitple technological sides of the full-stack development."
     },
     {
         "id": 3,
-        "image": "/messaging.png",
+        "image": "/grid-component.png",
         "header": "The Animation",
         "title": "",
-        "text": "Setting thing into motion involved complex 3-D animation and tight styling controls"
+        "text": "Setting the cube into an attractive pattern of motion involved complex 3-D animation, styling controls, and careful structuring of the code."
     },
     {
         "id": 4,
-        "image": "/googlemaps.jpeg",  
-        "header": "Render Each Cube Dynamically",
-        "title": "",
-        "text": "Insert a new project into the database and, VIOLA, a new cube appears where and how it is supposed to."  
+        "image": "/json-script.png",  
+        "header": " Dynamicity",
+        "title": 'In computer terminology, dynamic means "capable of action or change."',
+        "text": "Just add some info into the database and VIOLA, a new cube appears, styled and ready to go!"  
     },
     {
         "id": 5,
-        "image": "/database.png",
+        "image": "/simple-schema.png",
         "header": "The Database",
-        "title": "", 
-        "text": "With complete access to her hard-earned reviews, client is informed various avenues to leverage the reviews in her marketing."
+        "title": "Simple and Effective", 
+        "text": " I wanted a simple and repeatable design that would support addition of new projects. I think I accomplished that, check out this schema, less than 20 lines of code... Not bad. "
     },
     {
+
         "id": 6,
-        "image": "/summarry.png",
-        "header": "Navigate",
+        "image": "/responsive.png",
+        "header": "Responsive",
         "title": "",
-        "text": "The navigation window assists in getting to the Card (Cube Face) of your choosing. It is also pretty elegant. "
+        "text": "This build looks and works great on small, medium, and large screens "
     }
 
     ]
@@ -125,12 +125,12 @@ function connectToMongoDB(booksyCrawlerProject) {
         console.log("Connected successfully to MongoDB");
         // Call your functions here after successful connection
         updateProject(booksyCrawlerProject);
-        // insertNewProject(booksyCrawler);
+        // insertNewProject(myPortfolioProject);
     });
 }
 
 function updateProject(booksyCrawlerProject) {
-    const projectId = "65aea1dd31844caababdce64";
+    const projectId = "65aea1dd31844caababdce64"; //make sure you have the right id to update the right project
 
     Project.findByIdAndUpdate(
         projectId, 
