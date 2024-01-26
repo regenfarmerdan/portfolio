@@ -18,7 +18,7 @@ app.use('/api/projects', projectRoutes);
 // Serve static files from the React frontend app in production
 if (process.env.NODE_ENV === 'production') {
   // Set static folder
-  app.use(express.static('client/build'));
+  app.use(express.static(path.join(__dirname, 'client/build')));
 
   // Serve the index.html file
   app.get('*', (req, res) => {
