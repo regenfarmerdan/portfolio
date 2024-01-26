@@ -5,6 +5,8 @@ require('dotenv').config();
 const mongoose = require('mongoose');
 const projectRoutes = require('./src/routes/projectRoute');
 const cors = require('cors');
+const path = require('path');
+
 
  
  
