@@ -18,105 +18,151 @@ const Project = mongoose.model('Project', projectSchema);
 const booksyCrawlerProject = {
     projectName: 'Booksy Review Crawler', 
     cards: [ 
-        
-    {
-        "id": 1,
-        "image": "/Social-Proof.png",
-        "header": "Project Overview",
-        "title": "",
-        "text": "The client is a Master Hairstylist with over 100 five star reviews on Booksy! We wanted export and give her full controll of  this data which can be used to garner social proof."
-    },
-    {
-        "id": 2,
-        "image": "/reviews.png",
-        "header": "The Crawler",
-        "title": "",
-        "text": " I built and sent a crawler to her Booksy url, where it parsed through the site elements pulling her reviews and 'reading' start ratings. "   },
-    {
-        "id": 3,
-        "image": "/blonde.jpeg",
-        "header": "Storage",
-        "title": "",
-        "text": " The application copied the data and stored it on a database."
-    },
-    {
-        "id": 4,
-        "image": "/orangehairbooksy.jpeg",  
-        "header": "Rendering the data on clients webpage",
-        "title": "",
-        "text": "The database sends the data back to the application to render our own star icons, fonts, and styles."  
-    },
-    {
-        "id": 5,
-        "image": "/pinkhair.jpeg",
-        "header": "Content Planning",
-        "title": "", 
-        "text": "From here, this data can be sent to her personal website or social media. With complete access to her hard-earned reviews, the client is prepared to leverage her great work and grow her business faster."
-    },
-    {
-        "id": 6,
-        "image": "/ashleyyvettegoogle.png",
-        "header": "The Future",
-        "title": "",
-        "text": "Future versions of this application could employ direct API integration and automation with social media, Google Business Reviews, or CRM tools."
-    }
-
+        {
+            "id": 1,
+            "image": "/Social-Proof.png",
+            "header": "Project Overview",
+            "title": "",
+            "text": "The client, a Master Hairstylist with over 100 five-star reviews on Booksy, needed a way to export and gain full control of this data, which can be used to garner social proof."
+        },
+        {
+            "id": 2,
+            "image": "/reviews.png",
+            "header": "The Crawler",
+            "title": "",
+            "text": "I built and deployed a crawler to her Booksy URL, where it parsed through site elements, pulling her reviews and 'reading' star ratings."
+        },
+        {
+            "id": 3,
+            "image": "/blonde.jpeg",
+            "header": "Storage",
+            "title": "",
+            "text": "The application copied the data and stored it in a database."
+        },
+        {
+            "id": 4,
+            "image": "/orangehairbooksy.jpeg",
+            "header": "Rendering the Data on Client's Webpage",
+            "title": "",
+            "text": "The database sends the data back to the application to render our own star icons, fonts, and styles."
+        },
+        {
+            "id": 5,
+            "image": "/pinkhair.jpeg",
+            "header": "Content Planning",
+            "title": "",
+            "text": "From here, this data can be sent to her personal website or social media. With complete access to her hard-earned reviews, the client is equipped to leverage her great work and grow her business faster."
+        },
+        {
+            "id": 6,
+            "image": "/ashleyyvettegoogle.png",
+            "header": "The Future",
+            "title": "",
+            "text": "Future versions of this application could include direct API integration and automation with social media, Google Business Reviews, or CRM tools."
+        }
     ]
-}; 
+};
 
 const myPortfolioProject = {
     projectName: 'Portfolio Build', 
     cards: [ 
-        
-    {
-        "id": 1,
-        "image": "/portfolio_snapshot.png",
-        "header": "Project Scope",
-        "title": "",
-        "text": "This app pulls together several of the technical profficiencies and serves to highlight other projects that I've worked on "
-    },
-    {
-        "id": 2,
-        "image": "/mern.jpeg",
-        "header": "The Design",
-        "title": "",
-        "text": " A cube seemed appropriate to showcase the mulitple technological sides of the full-stack development."
-    },
-    {
-        "id": 3,
-        "image": "/grid-component.png",
-        "header": "The Animation",
-        "title": "",
-        "text": "Setting the cube into an attractive pattern of motion involved complex 3-D animation, styling controls, and careful structuring of the code."
-    },
-    {
-        "id": 4,
-        "image": "/json-script.png",  
-        "header": " Dynamicity",
-        "title": 'In computer terminology, dynamic means "capable of action or change."',
-        "text": "Just add some info into the database and VIOLA, a new cube appears, styled and ready to go!"  
-    },
-    {
-        "id": 5,
-        "image": "/simple-schema.png",
-        "header": "The Database",
-        "title": "Simple and Effective", 
-        "text": " I wanted a simple and repeatable design that would support addition of new projects. I think I accomplished that, check out this schema, less than 20 lines of code... Not bad. "
-    },
-    {
-
-        "id": 6,
-        "image": "/responsive.png",
-        "header": "Responsive",
-        "title": "",
-        "text": "This build looks and works great on small, medium, and large screens "
-    }
-
+        {
+            "id": 1,
+            "image": "/portfolio_snapshot.png",
+            "header": "Project Scope",
+            "title": "",
+            "text": "This app consolidates various technical proficiencies and serves to highlight other projects I've worked on."
+        },
+        {
+            "id": 2,
+            "image": "/mern.jpeg",
+            "header": "The Design",
+            "title": "",
+            "text": "A cube was chosen to showcase the multiple technological facets of full-stack development."
+        },
+        {
+            "id": 3,
+            "image": "/grid-component.png",
+            "header": "The Animation",
+            "title": "",
+            "text": "Animating the cube into an attractive motion pattern involved complex 3D animation, styling controls, and meticulous structuring of the code."
+        },
+        {
+            "id": 4,
+            "image": "/json-script.png",  
+            "header": "Dynamicity",
+            "title": "Capability of Action and Change",
+            "text": "Simply add some information to the database, and voilà, a new cube appears, styled and ready for display!"  
+        },
+        {
+            "id": 5,
+            "image": "/simple-schema.png",
+            "header": "The Database",
+            "title": "Simple and Effective", 
+            "text": "I aimed for a simple and repeatable design to support the addition of new projects. Check out this schema: less than 20 lines of code... Not bad at all."
+        },
+        {
+            "id": 6,
+            "image": "/responsive.png",
+            "header": "Responsive",
+            "title": "",
+            "text": "This build looks and functions beautifully on small, medium, and large screens."
+        }
     ]
-}; 
+};
+
+const JobMatchApp = {
+    projectName : 'JobMatchApp',
+    cards: [
+
+        {
+            id: 1, 
+            image: '/summarry.png', 
+            header: 'Project Summary', 
+            title: 'Job Matching Build',
+            text: 'This App aims to bridge employers and job-seekers within a niche industry. Required a full-stack build to support seamless communication, location data, GPS mapping, and scalable infrastructure, including payment gateways. Continues to be an ambitious and evolving project.'
+        },
+        {
+            id: 2,
+            image: "/googlemaps.jpeg",
+            header: "Google Maps API",
+            title: "", 
+            text: "Dependable map display and location data, powered by integration with Google Maps Services.",
+        }, 
+        {
+            id: 3, 
+            image: '/security.png',
+            header: 'Security & Access Control',
+            title: "",
+            text: "Incorporates password hashing, token authentications, and enterprise-grade data storage for robust security."
+        },
+        {
+            id: 4, 
+            image: '/messaging.png',
+            header: 'Messaging Application', 
+            title: '',
+            text: 'Facilitates real-time messaging between app users, underpinned by websockets and a dedicated database infrastructure.'
+        }, 
+        {
+            id: 5, 
+            image: '/googlemaps.jpeg',
+            header: 'Product Development Consulting',
+            title: '',
+            text: 'Provided consultancy on revenue-generating possibilities that were successfully integrated into the application.'
+        },
+        {
+            id: 6, 
+            image: '/database.png',
+            header: 'MongoDB Database Configuration', 
+            title: '',
+            text: 'Focused on database design, configuration, and implementation for efficient data management.'
+        }, 
+    ]
+}
 
 
-function connectToMongoDB(booksyCrawlerProject) {
+
+function connectToMongoDB(JobMatchApp) {
     const mongoURI = process.env.MONGO_URI;
     mongoose.connect(mongoURI);
     const db = mongoose.connection;
@@ -124,17 +170,17 @@ function connectToMongoDB(booksyCrawlerProject) {
     db.once('open', function() {
         console.log("Connected successfully to MongoDB");
         // Call your functions here after successful connection
-        updateProject(booksyCrawlerProject);
+        updateProject(JobMatchApp);
         // insertNewProject(myPortfolioProject);
     });
 }
 
-function updateProject(booksyCrawlerProject) {
-    const projectId = "65aea1dd31844caababdce64"; //make sure you have the right id to update the right project
+function updateProject(JobMatchApp) {
+    const projectId = "65ac4a170a25f60bdec3e2fa"; //make sure you have the right id to update the right project
 
     Project.findByIdAndUpdate(
         projectId, 
-        { $set: booksyCrawlerProject }, // Replace the entire document with booksyCrawler data
+        { $set: JobMatchApp }, // Replace the entire document with booksyCrawler data
         { new: true, useFindAndModify: false }
     )
     .then(updatedProject => {
@@ -213,4 +259,4 @@ function insertNewProject( data ) {
 }
 
  
-connectToMongoDB(booksyCrawlerProject);
+connectToMongoDB(JobMatchApp);

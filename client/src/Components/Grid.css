@@ -16,6 +16,11 @@
   
 }
 
+.grid-container .row .col:nth-child(n+3) {
+  margin-top: 4%;
+}
+
+
 .grid-container .row .col {
   display: flex;
   flex-direction: column;
@@ -23,20 +28,27 @@
   padding: 0px; /* Adjust padding as needed */
   justify-content: center; /* Center items horizontally */
   align-items: center; /* Center items vertically */
-  min-height: 500px; 
-  min-width: 500px; 
   position: relative; 
 }
 
-.project-name {
-  margin: 4%; 
-  width: 90%;
-}
-
  
+ 
+ .hide {
+  display: none;
+ }
+
+
 /* Custom CSS */
-@media (max-width: 991px) { /* Adjust the max-width value based on your requirements */
+@media (max-width: 950px) {  
   .grid-container .row .col:not(:first-child) {
-    margin-top: 15%; /* Apply a top margin of 10% */
+    margin-top: 30% !important;
   }
 }
+
+.additional-margin {
+  margin-top: 4%;
+}
+ 
+ h2 {
+  font-weight: 200 !important
+ }

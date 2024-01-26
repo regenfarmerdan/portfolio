@@ -1,5 +1,6 @@
 import {useState, useEffect, useContext} from 'react'
 import { ProjectContext } from './Components/ProjectContext';
+import { PopupProvider } from './Components/ProjectContext';
 import './App.css';
 import GridContainer from './Components/Grid';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -30,9 +31,10 @@ if (!projectData || projectData.length === 0) {
   return (
 
     <div>
-      <MyNavbar />
-      
-      <GridContainer />
+      <PopupProvider>
+        <MyNavbar />   
+        <GridContainer />
+      </PopupProvider>
     </div>
        
    

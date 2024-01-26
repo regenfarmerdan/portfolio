@@ -9,7 +9,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 const PopupCard = ({ cardData, onClose, onPaginate, index }) => {
 
   
-  console.log('card data is at PopupCard.jsx ==> ', cardData)
+  // console.log('card data is at PopupCard.jsx ==> ', cardData)
 
     const [isClosing, setIsClosing] = useState(false); 
     console.log('indes recieved at popupcard.jsx >>>>  ', index)

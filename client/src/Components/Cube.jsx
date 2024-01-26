@@ -3,29 +3,28 @@ import React, {useRef, useState, useEffect, useContext} from 'react';
 import './Cube.css';
 import ProjectCard from './Card'
 import PopupCard from './PopupCard';
+import { PopupContext } from './ProjectContext';
 
-const Cube = (project) => {
+const Cube = (props) => {
 
-  const projectData = [project.project.cards]
+  const { popUp } = props; 
+  const projectData = [props.project.cards]
   const cardsArray = projectData[0];
-  // const [cardSelect, setCardSelect] = useState(null); // Track the selected face
   const [isDefault, setIsDefault] = useState(true); // true: spinning and not zoomed, false: paused and zoomed
   const [cubeRotation, setCubeRotation] = useState({ x: 0, y: 0 });
   const [cardIndex, setCardIndex] = useState(null)
- 
-  useEffect(() => {
-
-    console.log(' there has been an index change ' , cardIndex)
-  }, []); // Dependency array with selected face 
+  
 
   const handleSelect = (newIndex) => {
     setCardIndex(newIndex);
+    popUp(true); 
 };
 
   const handleClosePopup = () => {
     setCardIndex(null)
+    popUp(false); 
   }
-    
+
 
   // apply css class that sets the face into view
   const getFaceClass = (face) => `face ${face}`;
