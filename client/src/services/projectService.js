@@ -1,7 +1,7 @@
 // Function to fetch projects from the backend
 export const fetchProjects = async () => {
     try {
-        const response = await fetch('http://localhost:3000/api/projects');
+        const response = await fetch('${process.env.REACT_APP_API_BASE_URL}/api/projects');
         
         // Check if the request was successful
         if (!response.ok) {
